@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 2 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 3 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -14,7 +14,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | --- | --- | --- |
 | 1 | 2023-02-04T11:10:57+05:30 | Establish module imports, constants and repository hygiene (present) |
 | 2 | 2023-02-12T09:07:26+05:30 | Normalize transcript text into comparison tokens (present) |
-| 3 | 2023-10-28T16:29:16+05:30 | Align transcripts and count edit operations for word error rate (later stage) |
+| 3 | 2023-10-28T16:29:16+05:30 | Align transcripts and count edit operations for word error rate (present) |
 | 4 | 2023-11-30T12:19:45+05:30 | Expose the command-line interface and default demonstration (later stage) |
 | 5 | 2024-01-04T15:32:11+05:30 | Cover normalization and establish the test harness (later stage) |
 | 6 | 2024-10-06T10:23:37+05:30 | Cover substitution and deletion (later stage) |
