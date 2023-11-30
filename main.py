@@ -44,3 +44,15 @@ def evaluate(reference, hypothesis):
             j -= 1
     wer = distance[n][m] / n if n else 0.0 if not m else None
     return {'reference_words': n, 'hypothesis_words': m, **counts, 'errors': distance[n][m], 'wer': wer, 'normalization': 'Unicode casefold; word tokens; punctuation ignored', 'alignment': list(reversed(alignment))}
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--reference', default='Please turn on the kitchen light')
+    parser.add_argument('--hypothesis', default='please turn off kitchen lights')
+    args = parser.parse_args()
+    try:
+        print(json.dumps(evaluate(args.reference, args.hypothesis), indent=2))
+    except ValueError as exc:
+        parser.error(str(exc))
+if __name__ == '__main__':
+    main()
