@@ -8,3 +8,8 @@ class WerTests(unittest.TestCase):
 
     def test_normalization(self):
         self.assertEqual(evaluate('HELLO, world!', 'hello world')['wer'], 0)
+
+    def test_substitution_and_deletion(self):
+        r = evaluate('a b c d', 'a x d')
+        self.assertEqual((r['substitutions'], r['deletions'], r['insertions']), (1, 1, 0))
+        self.assertEqual(r['wer'], 0.5)
