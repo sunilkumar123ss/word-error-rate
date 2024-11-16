@@ -16,3 +16,8 @@ class WerTests(unittest.TestCase):
 
     def test_insertion_can_exceed_one(self):
         self.assertEqual(evaluate('a', 'a b c')['wer'], 2)
+
+    def test_empty_reference(self):
+        self.assertEqual(evaluate('', '')['wer'], 0)
+        self.assertIsNone(evaluate('', 'one')['wer'])
+        self.assertEqual(evaluate('one', '')['deletions'], 1)

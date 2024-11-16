@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 7 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 8 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -19,7 +19,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 5 | 2024-01-04T15:32:11+05:30 | Cover normalization and establish the test harness (present) |
 | 6 | 2024-10-06T10:23:37+05:30 | Cover substitution and deletion (present) |
 | 7 | 2024-10-23T14:28:37+05:30 | Cover insertion can exceed one (present) |
-| 8 | 2024-11-16T09:24:50+05:30 | Cover empty reference (later stage) |
+| 8 | 2024-11-16T09:24:50+05:30 | Cover empty reference (present) |
 | 9 | 2025-02-15T16:32:53+05:30 | Cover alignment reconstructs tokens (later stage) |
 | 10 | 2025-06-22T14:54:20+05:30 | Cover invalid or oversized (later stage) |
 | 11 | 2025-08-14T18:35:13+05:30 | Describe package metadata and default verification arguments (later stage) |
