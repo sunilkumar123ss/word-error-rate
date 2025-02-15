@@ -21,3 +21,8 @@ class WerTests(unittest.TestCase):
         self.assertEqual(evaluate('', '')['wer'], 0)
         self.assertIsNone(evaluate('', 'one')['wer'])
         self.assertEqual(evaluate('one', '')['deletions'], 1)
+
+    def test_alignment_reconstructs_tokens(self):
+        r = evaluate('a b c', 'a x c d')
+        self.assertEqual([x['reference'] for x in r['alignment'] if x['reference'] is not None], ['a', 'b', 'c'])
+        self.assertEqual([x['hypothesis'] for x in r['alignment'] if x['hypothesis'] is not None], ['a', 'x', 'c', 'd'])
