@@ -26,3 +26,11 @@ class WerTests(unittest.TestCase):
         r = evaluate('a b c', 'a x c d')
         self.assertEqual([x['reference'] for x in r['alignment'] if x['reference'] is not None], ['a', 'b', 'c'])
         self.assertEqual([x['hypothesis'] for x in r['alignment'] if x['hypothesis'] is not None], ['a', 'x', 'c', 'd'])
+
+    def test_invalid_or_oversized(self):
+        with self.assertRaises(ValueError):
+            evaluate(None, 'x')
+        with self.assertRaises(ValueError):
+            evaluate('a ' * 1001, '')
+if __name__ == '__main__':
+    unittest.main()
