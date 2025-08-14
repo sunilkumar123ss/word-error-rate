@@ -1,0 +1,8 @@
+{
+  "slug": "word-error-rate",
+  "title": "Word Error Rate Aligner",
+  "description": "Compute word-level substitution, deletion and insertion counts with a reproducible edit alignment.",
+  "category": "voice",
+  "demo_args": [],
+  "expected_exit": 0
+}
